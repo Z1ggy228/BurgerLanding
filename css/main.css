@@ -1,0 +1,454 @@
+/* ==================================================== Fonts ==================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* ==================================================== Global ==================================================== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  color: #ffffff;
+  background-color: #1c1c1c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+
+  border: 0 !important;
+  white-space: nowrap !important;
+
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.button {
+  padding: 15px 37px;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #f6762c;
+  border-radius: 5px;
+
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ee935f;
+}
+
+.button:active {
+  background-color: #f1a77c;
+}
+
+/* ==================================================== Header ==================================================== */
+
+.header {
+  padding: 25px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  display: flex;
+  column-gap: 28px;
+}
+
+.header__nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  opacity: 0.7;
+
+  transition: opacity 0.2s ease;
+}
+
+.header__nav-link--active {
+  font-weight: 500;
+  font-size: 15px;
+
+  opacity: 1;
+}
+
+.header__nav-link:hover {
+  opacity: 1;
+}
+
+.header__nav-link:active {
+  opacity: 0.8;
+}
+
+/* ==================================================== Welcome ==================================================== */
+
+.welcome {
+  min-height: 100vh;
+  padding: 280px 0;
+  margin-top: -100px;
+
+  background: url('./../images/welcome-bg.jpg') center/cover no-repeat;
+}
+
+.welcome__body {
+  max-width: 523px;
+}
+
+.welcome__body span {
+  margin-bottom: 7px;
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.welcome__title {
+  margin-bottom: 37px;
+
+  font-weight: 500;
+  font-size: 57px;
+}
+
+.welcome__description {
+  margin-bottom: 42px;
+
+  font-size: 18px;
+
+  opacity: 0.7;
+}
+
+/* ==================================================== Food ==================================================== */
+
+.food {
+  padding: 100px 0;
+}
+
+.food__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.food__card {
+  width: 262px;
+
+  background-color: #312f30;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.food__card-image {
+  width: 100%;
+  height: 175px;
+
+  object-fit: cover;
+}
+
+.food__card-body {
+  min-height: 150px;
+  padding: 28px;
+
+  text-align: center;
+}
+
+.food__card-title {
+  margin-bottom: 12px;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.food__card-description {
+  opacity: 0.7;
+}
+
+/* ==================================================== Products ==================================================== */
+
+.products {
+  padding: 80px 0;
+
+  background-color: #312f30;
+}
+
+.products .container {
+  padding-right: 100px;
+}
+
+.products__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products__body {
+  max-width: 368px;
+}
+
+.product__title {
+  margin-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 44px;
+}
+
+.product__description {
+  margin-bottom: 13px;
+
+  opacity: 0.7;
+}
+
+.product__price {
+  margin-bottom: 11px;
+
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.product__price span {
+  margin-left: 6px;
+
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+/* ==================================================== Dishes ==================================================== */
+
+.dishes {
+  padding: 150px 0 75px 0;
+}
+
+.dishes__list {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 30px;
+}
+
+.dishes__card {
+  width: 555px;
+  height: 300px;
+  padding: 65px 5px 65px 50px;
+
+  background-color: #4d4343;
+  border-radius: 10px;
+}
+
+.dishes__card-body {
+  width: 100%;
+  max-width: 250px;
+}
+
+.dishes__card-title {
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.dishes__card-description {
+  margin-bottom: 12px;
+
+  opacity: 0.7;
+}
+
+.dishes__card-price {
+  margin-bottom: 12px;
+
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.dishes__card-price span {
+  margin-left: 10px;
+
+  opacity: 0.5;
+}
+
+.dishes__card-button {
+  padding: 12px 36px;
+
+  font-size: 12px;
+}
+
+.dairy {
+  background: url('./../images/product-1.jpg') center/cover no-repeat;
+}
+
+.pizza {
+  background: url('./../images/product-2.jpg') center/cover no-repeat;
+}
+
+.burger {
+  background: url('./../images/product-3.jpg') center/cover no-repeat;
+}
+
+.papa {
+  background: url('./../images/product-4.jpg') center/cover no-repeat;
+}
+
+.dairy .dishes__card-body,
+.burger .dishes__card-body {
+  margin-left: auto;
+}
+
+/* ==================================================== Feedback ==================================================== */
+
+.feedback {
+  padding: 75px 0 200px 0;
+}
+
+.feedback .container {
+  padding: 0 120px 0 170px;
+}
+
+.feedback__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__body {
+  max-width: 370px;
+
+  text-align: center;
+}
+
+.feedback__body-image {
+  margin-bottom: 40px;
+}
+
+.feedback__body-text {
+  margin-bottom: 28px;
+
+  opacity: 0.7;
+}
+
+.feedback__body-name {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* ==================================================== Download ==================================================== */
+
+.download {
+  padding: 60px 0;
+
+  background-color: #312f30;
+}
+
+.download .container {
+  padding: 0 100px;
+}
+
+.download__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__title {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* ==================================================== Footer ==================================================== */
+
+.footer {
+  padding: 125px 0 145px 0;
+}
+
+.footer .container {
+  padding-right: 60px;
+}
+
+.footer__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__title-list {
+  font-weight: 500;
+}
+
+.footer__connection-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer__connection-item:first-child {
+  margin-bottom: 25px;
+}
+
+.footer__email,
+.footer__web-site {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+
+  font-size: 12px;
+
+  opacity: 0.8;
+}
+
+.footer__email::before,
+.footer__web-site::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+
+  width: 12px;
+  aspect-ratio: 1;
+}
+
+.footer__email::before {
+  background: url('./../icons/mail.svg') center/contain no-repeat;
+}
+
+.footer__web-site::before {
+  background: url('./../icons/global.svg') center/contain no-repeat;
+}
+
+.footer__menu-list,
+.footer__information-list,
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__menu-link,
+.footer__information-link,
+.footer__links-link {
+  font-size: 12px;
+
+  opacity: 0.8;
+}
+
+.footer__soc1als-list {
+  display: flex;
+  column-gap: 10px;
+}
